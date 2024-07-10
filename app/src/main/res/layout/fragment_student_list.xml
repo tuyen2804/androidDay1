@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by age" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioGreater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Greater" />
+
+        <RadioButton
+            android:id="@+id/radioLess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Less" />
+
+        <RadioButton
+            android:id="@+id/radioEqual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equal" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search" />
+    <EditText
+        android:id="@+id/edtStudentId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID" />
+    <EditText
+        android:id="@+id/edtStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NAME" />
+    <EditText
+        android:id="@+id/edtStudentAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="AGE" />
+
+
+    <Button
+        android:id="@+id/btnAddStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Student" />
+
+    <ListView
+        android:id="@+id/listViewStudents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
